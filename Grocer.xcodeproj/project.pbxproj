@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C29A99D1C911106008AEF07 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29A99C1C911106008AEF07 /* LoginViewController.swift */; };
 		5C364E301C90C21A00E2D829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C364E2F1C90C21A00E2D829 /* AppDelegate.swift */; };
 		5C364E321C90C21A00E2D829 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C364E311C90C21A00E2D829 /* FirstViewController.swift */; };
 		5C364E341C90C21A00E2D829 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C364E331C90C21A00E2D829 /* SecondViewController.swift */; };
 		5C364E371C90C21A00E2D829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C364E351C90C21A00E2D829 /* Main.storyboard */; };
 		5C364E391C90C21A00E2D829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C364E381C90C21A00E2D829 /* Assets.xcassets */; };
 		5C364E3C1C90C21A00E2D829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C364E3A1C90C21A00E2D829 /* LaunchScreen.storyboard */; };
+		5C364E4A1C90D66800E2D829 /* Cabbage2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C364E471C90D66800E2D829 /* Cabbage2x.png */; };
+		5C364E4B1C90D66800E2D829 /* Cabbage1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C364E481C90D66800E2D829 /* Cabbage1x.png */; };
+		5C364E4C1C90D66800E2D829 /* Cabbage0.5x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C364E491C90D66800E2D829 /* Cabbage0.5x.png */; };
+		5C364E4F1C90E7F000E2D829 /* GroceryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C364E4E1C90E7F000E2D829 /* GroceryTableViewController.swift */; };
+		5C364E511C90FA0000E2D829 /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C364E501C90FA0000E2D829 /* AddFriendsViewController.swift */; };
+		5C5778011C97C468001D7B74 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C5777FF1C97C468001D7B74 /* CoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C29A99C1C911106008AEF07 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5C364E2C1C90C21A00E2D829 /* Grocer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grocer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C364E2F1C90C21A00E2D829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C364E311C90C21A00E2D829 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		5C364E331C90C21A00E2D829 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5C364E361C90C21A00E2D829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5C364E381C90C21A00E2D829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C364E381C90C21A00E2D829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Grocer/Assets.xcassets; sourceTree = "<group>"; };
 		5C364E3B1C90C21A00E2D829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C364E3D1C90C21A00E2D829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C364E471C90D66800E2D829 /* Cabbage2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cabbage2x.png; sourceTree = "<group>"; };
+		5C364E481C90D66800E2D829 /* Cabbage1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cabbage1x.png; sourceTree = "<group>"; };
+		5C364E491C90D66800E2D829 /* Cabbage0.5x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cabbage0.5x.png; sourceTree = "<group>"; };
+		5C364E4E1C90E7F000E2D829 /* GroceryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryTableViewController.swift; sourceTree = "<group>"; };
+		5C364E501C90FA0000E2D829 /* AddFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
+		5C5778001C97C468001D7B74 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +56,7 @@
 			children = (
 				5C364E2E1C90C21A00E2D829 /* Grocer */,
 				5C364E2D1C90C21A00E2D829 /* Products */,
+				5C364E4D1C90E02200E2D829 /* Pictures */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +73,27 @@
 			children = (
 				5C364E2F1C90C21A00E2D829 /* AppDelegate.swift */,
 				5C364E311C90C21A00E2D829 /* FirstViewController.swift */,
+				5C364E4E1C90E7F000E2D829 /* GroceryTableViewController.swift */,
+				5C5777FF1C97C468001D7B74 /* CoreData.xcdatamodeld */,
 				5C364E331C90C21A00E2D829 /* SecondViewController.swift */,
+				5C364E501C90FA0000E2D829 /* AddFriendsViewController.swift */,
 				5C364E351C90C21A00E2D829 /* Main.storyboard */,
-				5C364E381C90C21A00E2D829 /* Assets.xcassets */,
 				5C364E3A1C90C21A00E2D829 /* LaunchScreen.storyboard */,
 				5C364E3D1C90C21A00E2D829 /* Info.plist */,
+				5C29A99C1C911106008AEF07 /* LoginViewController.swift */,
 			);
 			path = Grocer;
+			sourceTree = "<group>";
+		};
+		5C364E4D1C90E02200E2D829 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				5C364E381C90C21A00E2D829 /* Assets.xcassets */,
+				5C364E481C90D66800E2D829 /* Cabbage1x.png */,
+				5C364E471C90D66800E2D829 /* Cabbage2x.png */,
+				5C364E491C90D66800E2D829 /* Cabbage0.5x.png */,
+			);
+			name = Pictures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +122,9 @@
 		5C364E241C90C21A00E2D829 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = lkhatter;
@@ -125,9 +157,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C364E4C1C90D66800E2D829 /* Cabbage0.5x.png in Resources */,
+				5C364E4B1C90D66800E2D829 /* Cabbage1x.png in Resources */,
 				5C364E3C1C90C21A00E2D829 /* LaunchScreen.storyboard in Resources */,
 				5C364E391C90C21A00E2D829 /* Assets.xcassets in Resources */,
 				5C364E371C90C21A00E2D829 /* Main.storyboard in Resources */,
+				5C364E4A1C90D66800E2D829 /* Cabbage2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C29A99D1C911106008AEF07 /* LoginViewController.swift in Sources */,
 				5C364E341C90C21A00E2D829 /* SecondViewController.swift in Sources */,
+				5C364E511C90FA0000E2D829 /* AddFriendsViewController.swift in Sources */,
 				5C364E301C90C21A00E2D829 /* AppDelegate.swift in Sources */,
+				5C364E4F1C90E7F000E2D829 /* GroceryTableViewController.swift in Sources */,
 				5C364E321C90C21A00E2D829 /* FirstViewController.swift in Sources */,
+				5C5778011C97C468001D7B74 /* CoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +327,22 @@
 				5C364E421C90C21A00E2D829 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5C5777FF1C97C468001D7B74 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5C5778001C97C468001D7B74 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 5C5778001C97C468001D7B74 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5C364E241C90C21A00E2D829 /* Project object */;
 }
