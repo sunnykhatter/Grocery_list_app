@@ -10,9 +10,18 @@ import UIKit
 
 class SecondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
+    
+    var factual_API = FactualAPI()
+    var data = [String]()//FactualAPI().queryProducts()//[String]()
+
+    
+
+   
     var searchActive : Bool = false
-    var data = ["Avacodo","Carrots","Lettuce","Cucumbers","Oreo Cookies","Potatos","Cheese"]
+//    var data = ["Avacodo","Carrots","Lettuce","Cucumbers","Oreo Cookies","Potatos","Cheese"]
     var filtered:[String] = []
+    
+    
     
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -20,6 +29,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
+//         var data = FactualAPI().queryProducts()
+        
         super.viewDidLoad()
         /* Setup delegates */
         tableView.delegate = self
@@ -40,11 +51,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell!;
-        if(searchActive){
-            cell.textLabel?.text = filtered[indexPath.row]
-        } else {
             cell.textLabel?.text = data[indexPath.row];
-        }
+        
         
         return cell;
     }
@@ -54,14 +62,23 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func searchBarTextDidEndEditing(searchBar: UISearchBar) {
-        searchActive = false;
+        searchBar.endEditing(true)
+
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        searchActive = false;
+        searchBar.endEditing(true)
+
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        FactualAPI().queryProducts(searchBar.text!){
+            arrayProducts in
+            // doing something, arrayProduct is temp array
+            self.data = arrayProducts
+            self.tableView.reloadData()
+        }
+
         searchActive = false;
     }
     

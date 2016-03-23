@@ -7,14 +7,32 @@
 //
 
 import UIKit
+import OAuthSwift
+
+
 
 class LoginViewController: UIViewController {
 
+    
+    var fapi = FactualAPI()
+    
+    @IBAction func login(sender: AnyObject) {
+
+        
+    }
+ 
+     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+       
     }
+
+        
+        // Do any additional setup after loading the view.
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

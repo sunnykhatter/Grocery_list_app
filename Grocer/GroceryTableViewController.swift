@@ -11,7 +11,7 @@ import UIKit
 class GroceryTableViewController: UITableViewController {
 
     var data = ["Avacodo","Carrots","Lettuce","Cucumbers","Oreo Cookies","Potatos","Cheese"]
-    
+
 
     
     @IBAction func addItem(sender: AnyObject) {

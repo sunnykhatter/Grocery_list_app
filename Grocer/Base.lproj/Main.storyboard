@@ -305,10 +305,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="RM2-FQ-u84">
             <objects>
-                <viewController id="beL-DV-2QD" sceneMemberID="viewController">
+                <viewController id="beL-DV-2QD" customClass="LoginViewController" customModule="Grocer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eCN-tC-NMF"/>
                         <viewControllerLayoutGuide type="bottom" id="w8P-rC-ctX"/>
@@ -333,6 +333,7 @@
                                 <rect key="frame" x="228" y="499" width="145" height="30"/>
                                 <state key="normal" title="Log in with Facebook"/>
                                 <connections>
+                                    <action selector="login:" destination="beL-DV-2QD" eventType="touchUpInside" id="joh-w9-tI8"/>
                                     <segue destination="49e-Tb-3d3" kind="showDetail" id="Boh-hH-WS1"/>
                                 </connections>
                             </button>
