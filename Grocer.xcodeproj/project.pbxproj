@@ -24,6 +24,7 @@
 		5C7BBF861CA078C800FF8528 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C7BBF811CA077AC00FF8528 /* OAuthSwift.framework */; };
 		5C7BBF871CA078C800FF8528 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C7BBF811CA077AC00FF8528 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C8641701C9E53B0004D58C8 /* Factual_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86416F1C9E53B0004D58C8 /* Factual_api.swift */; };
+		5CDC04561CA34BAC00729814 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDC04551CA34BAC00729814 /* ItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,7 @@
 		5C5778001C97C468001D7B74 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		5C7BBF811CA077AC00FF8528 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
 		5C86416F1C9E53B0004D58C8 /* Factual_api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factual_api.swift; sourceTree = "<group>"; };
+		5CDC04551CA34BAC00729814 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		A77070D86B6AE7EF2665C018 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,17 +100,18 @@
 			isa = PBXGroup;
 			children = (
 				5C364E2F1C90C21A00E2D829 /* AppDelegate.swift */,
-				5C364E311C90C21A00E2D829 /* FirstViewController.swift */,
 				5C86416F1C9E53B0004D58C8 /* Factual_api.swift */,
-				5C364E4E1C90E7F000E2D829 /* GroceryTableViewController.swift */,
-				5C5777FF1C97C468001D7B74 /* CoreData.xcdatamodeld */,
+				5C364E311C90C21A00E2D829 /* FirstViewController.swift */,
 				5C364E331C90C21A00E2D829 /* SecondViewController.swift */,
+				5C364E4E1C90E7F000E2D829 /* GroceryTableViewController.swift */,
 				5C364E501C90FA0000E2D829 /* AddFriendsViewController.swift */,
-				5C364E351C90C21A00E2D829 /* Main.storyboard */,
-				5C364E3A1C90C21A00E2D829 /* LaunchScreen.storyboard */,
 				5C29A99C1C911106008AEF07 /* LoginViewController.swift */,
 				5C2284711CA0BD13006E60D1 /* SwiftyJSON.swift */,
+				5CDC04551CA34BAC00729814 /* ItemViewController.swift */,
+				5C5777FF1C97C468001D7B74 /* CoreData.xcdatamodeld */,
 				5C364E3D1C90C21A00E2D829 /* Info.plist */,
+				5C364E351C90C21A00E2D829 /* Main.storyboard */,
+				5C364E3A1C90C21A00E2D829 /* LaunchScreen.storyboard */,
 			);
 			path = Grocer;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				5C364E4F1C90E7F000E2D829 /* GroceryTableViewController.swift in Sources */,
 				5C8641701C9E53B0004D58C8 /* Factual_api.swift in Sources */,
 				5C364E321C90C21A00E2D829 /* FirstViewController.swift in Sources */,
+				5CDC04561CA34BAC00729814 /* ItemViewController.swift in Sources */,
 				5C5778011C97C468001D7B74 /* CoreData.xcdatamodeld in Sources */,
 				5C2284721CA0BD13006E60D1 /* SwiftyJSON.swift in Sources */,
 			);

@@ -23,24 +23,14 @@ let oauthswift = OAuth1Swift(
 
     
 
-    func queryProducts(s1: String, successCallback: ([String])->Void) {
+    func queryProducts(s1: String, successCallback: (JSON)->Void) {
     var final = [String]()
     self.oauthswift.client.get("http://api.v3.factual.com/t/products-cpg?q=\(s1)",
         success: {
             (data, response) in
             let dataString = NSString(data: data, encoding: NSUTF8StringEncoding)
             let json = JSON(data: data)
-            
-            
-            if json["status"].stringValue == "ok" {
-                // we're OK to parse!
-                for result in json["response"]["data"].arrayValue {
-                    final.append(result["product_name"].stringValue)
-                }
-                
-            }
-            successCallback(final) // callback here
-            
+            successCallback(json) // callback here
         }
         
         , failure: { error in
