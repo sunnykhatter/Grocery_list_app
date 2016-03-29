@@ -54,15 +54,12 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     
     func searchBarTextDidEndEditing(searchBar: UISearchBar) {
         searchActive = false;
-        self.resignFirstResponder()
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         searchActive = false;
         searchBar.showsCancelButton = false
         searchBar.text = ""
-        searchBar.resignFirstResponder()
-
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
@@ -79,10 +76,9 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
                 }
                 self.data = final
             }
-            
+            searchBar.resignFirstResponder()
             self.tableView.reloadData()
         }
-    searchBar.resignFirstResponder()
         
         searchActive = false;
         
@@ -99,7 +95,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             searchActive = false;
         } else {
             searchActive = true;
-            self.searchBar.resignFirstResponder()
+
         }
         self.tableView.reloadData()
     }
@@ -108,6 +104,14 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         return indexPath
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        self.searchBar.resignFirstResponder()
+        return true
+    }
 
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

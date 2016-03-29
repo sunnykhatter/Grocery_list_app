@@ -20,17 +20,15 @@ class ItemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+
+//        imageURL.image = UIImage(data: data!)
         
-        
-        
+        print(receivedJSON)
         product_name.text = receivedJSON["product_name"].stringValue
+//        receivedJSON["image_urls"].arrayValue[3]
         
-//            print()
-//        print(receivedJSON.dictionary)
-        
-//        for result in receivedJSON {
-//            print(result.0)
-//        }
+
         
     }
     

@@ -145,11 +145,21 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XXs-SG-n0B">
+                                <rect key="frame" x="180" y="172" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="yjv-NE-hIJ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="XXs-SG-n0B" firstAttribute="leading" secondItem="crY-ak-qZq" secondAttribute="leadingMargin" constant="160" id="0rL-ef-Vfi"/>
                             <constraint firstItem="J5Q-lI-Qf2" firstAttribute="leading" secondItem="crY-ak-qZq" secondAttribute="leadingMargin" constant="58" id="BL4-Uu-UrL"/>
+                            <constraint firstItem="XXs-SG-n0B" firstAttribute="centerX" secondItem="crY-ak-qZq" secondAttribute="centerX" id="EBm-U2-ZnX"/>
+                            <constraint firstItem="XXs-SG-n0B" firstAttribute="top" secondItem="J5Q-lI-Qf2" secondAttribute="bottom" constant="8" id="M5H-nR-Kgg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="J5Q-lI-Qf2" secondAttribute="trailing" constant="58" id="SaZ-Su-OIH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XXs-SG-n0B" secondAttribute="trailing" constant="160" id="b7S-mt-dtL"/>
                             <constraint firstItem="J5Q-lI-Qf2" firstAttribute="top" secondItem="kEc-GV-Yew" secondAttribute="bottom" constant="26" id="hoX-wx-q0J"/>
                         </constraints>
                     </view>
